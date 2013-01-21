@@ -1,0 +1,71 @@
+<html>
+<head>
+<style>
+.spinner {  
+		/*display: inline-block;
+width: 40px;
+height: 40px;
+position: absolute;
+right: 12px;
+top: 10px;
+border: 24px dashed rgba(0,0,0,.5);
+border-radius: 67px;
+-webkit-animation-name: rotate !important;
+-webkit-animation-duration: 4600ms !important;
+-webkit-animation-iteration-count: infinite !important;
+-webkit-animation-timing-function: linear !important;*/
+display: inline-block;
+width: 10px;
+height: 10px;
+position: absolute;
+right: 38px;
+top: 10px;
+border: 15px dashed rgba(0,0,0,0);
+border-radius: 30px;
+-webkit-animation-name: rotate !important;
+-webkit-animation-duration: 4600ms !important;
+-webkit-animation-iteration-count: infinite !important;
+-webkit-animation-timing-function: linear !important;
+box-shadow: 6px 0 0 0 black;
+}
+
+.spinner2 {	
+display: inline-block;
+width: 10px;
+height: 10px;
+position: absolute;
+right: 38px;
+top: 10px;
+border: 15px dashed rgba(0,0,0,0);
+border-radius: 30px;
+-webkit-animation-name: rotate2 !important;
+-webkit-animation-duration: 6600ms !important;
+-webkit-animation-iteration-count: infinite !important;
+-webkit-animation-timing-function: linear !important;
+box-shadow: 6px 0 0 0 black;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg) scale(1);
+    }
+    100% {
+         -webkit-transform: rotate(360deg) scale(1);
+    }
+}
+
+@-webkit-keyframes rotate2 {
+    0% {
+        -webkit-transform: rotate(360deg) scale(1);
+    }
+    100% {
+         -webkit-transform: rotate(0deg) scale(1);
+    }
+}
+</style>
+</head>
+<body>
+  <div class="spinner"></div>
+  <div class="spinner2"></div>
+</body>
+</html>
