@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+.spinner {
+display: inline-block;
+width: 25px;
+height: 25px;
+position: absolute;
+right: 27px;
+top: 20px;
+border: 2px dashed rgba(0,0,0,.5);
+border-radius: 20px;
+-webkit-animation-name: rotate !important;
+-webkit-animation-duration: 1600ms !important;
+-webkit-animation-iteration-count: infinite !important;
+-webkit-animation-timing-function: linear !important;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg) scale(1);
+    }
+    100% {
+         -webkit-transform: rotate(360deg) scale(1);
+    }
+}
+</style>
+</head>
+<body>
+  <div class="spinner"></div>  
+</body>
+</html>

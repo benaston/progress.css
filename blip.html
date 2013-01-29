@@ -1,0 +1,72 @@
+<html>
+<head>
+<style>
+.centered {
+width:100%;
+height:100%;
+display:-webkit-box;
+-webkit-box-orient:vertical;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+}
+.blip {
+position:relative;
+width: 25px;
+height: 25px;
+border: 2px dashed rgba(0,0,0,1);
+border-radius: 20px;
+-webkit-animation-name: blip !important;
+-webkit-animation-duration: 1600ms !important;
+-webkit-animation-iteration-count: infinite !important;
+-webkit-animation-timing-function: linear !important;
+}
+
+@-webkit-keyframes 'blip' {0% {
+-webkit-transform: scale(.1);
+opacity: 0;
+}
+1% {
+-webkit-transform: scale(.1);
+opacity: .6;
+}
+60% {
+opacity: 0;
+-webkit-transform: scale(1);
+}
+100% {
+opacity: 0;
+-webkit-transform: scale(1);
+}
+}
+.vertical-line {
+	position: fixed;
+	left: 50%;
+	top:0;
+	margin: auto;
+	width: 1px;
+	height: 100%;
+	background-color: rgba(0,0,0,0.05);
+	box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
+	border: none;
+}
+.horizontal-line {
+	position: fixed;
+	top: 50%;
+	left:0;
+	margin: auto;
+	height: 1px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.0.05);
+	box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
+	border: none;
+}
+</style>
+</head>
+<body>
+	<div class="vertical-line"></div>
+	<div class="horizontal-line"></div>
+	<div class="centered">
+		<div class="blip"></div>  
+	</div>	
+</body>
+</html>
