@@ -9,3 +9,4 @@ Online:
  - http://sheltered-coast-9638.herokuapp.com/blip.html
  - http://sheltered-coast-9638.herokuapp.com/orbit.html
  - http://sheltered-coast-9638.herokuapp.com/spinner.html
+ - http://sheltered-coast-9638.herokuapp.com/disc.html
